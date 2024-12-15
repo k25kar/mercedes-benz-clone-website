@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Car</title>
+    <link rel="stylesheet" href="styleee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional CSS styles for the buy.html page */
+        .containerbuy {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buyform-group {
+            margin-bottom: 20px;
+        }
+
+        .buyform-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .buyform-group input[type="text"],
+        .buyform-group input[type="email"],
+        .buyform-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .buyform-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        .btn-buyy {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-buyy:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_name">
+                <a href="trialll.html">
+                <img src="mercedes_logo.png" alt="mercedes_logo" style="height: 75px;width: 75px;">
+                </a>
+                <a href="trialll.html" id="merc-benz-mainlogotitle">
+                <h1 class="logo">Mercedes-Benz</h1>
+                </a>
+                <div class="search-bar">
+                    <input id="searchInput" type="text" placeholder="Your Search Term...">
+                    <button id="submitButton" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #a3a3a3;"></i></button>
+                </div>                                
+                <div class="profile-button">
+                    <button id="profile-menu-btn" type="button">
+                        <i class="fa-regular fa-user" style="color: #8c8c8c; height: fit-content; width: fit-content;"></i>
+                    </button>
+                    <div id="profile-menu" class="profile-menu">
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="trialll.html">Home</a></li>
+                    <li><a href="#" onclick="scrollToModels()">Models</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="containerbuy">
+        <h2>Buy Car</h2>
+        <form id="buyForm">
+            <div class="buyform-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="buyform-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="buyform-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="buyform-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="buyform-group">
+                <label for="car">Select Car:</label>
+                <select id="car" name="car" required>
+                    <option value="">-- Select Car --</option>
+                    <option value="eqee">EQE Saloon</option>
+                    <option value="Maybach S-Classs">Maybach S-Class</option>
+                    <option value="SL Roadsterr">SL Roadster</option>
+                    <option value="G-Classs">G-Wagon</option>
+                </select>
+            </div>
+            <div class="buyform-group" id="colorSelect">
+                <label for="color">Select Color:</label>
+                <select id="color" name="color">
+                    <option value="">-- Select Color --</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="silver">Silver</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div class="buyform-group">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment" required>
+                    <option value="">-- Select Payment Method --</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="Cash">Cash</option>
+                </select>
+            </div>
+            
+
+            <button type="button" class="btn-buyy" onclick="confirmPurchase()">BUY</button>
+        </form>
+    </div>
+
+    <script>
+         function showColors() {
+            var carSelect = document.getElementById("car");
+            var colorSelect = document.getElementById("colorSelect");
+
+            // Show color select if EQE Saloon is selected
+            if (carSelect.value === "eqe") {
+                colorSelect.style.display = "block";
+            } else {
+                colorSelect.style.display = "none";
+            }
+        }
+
+        function confirmPurchase() {
+            var carSelect = document.getElementById("car");
+            var selectedCar = carSelect.options[carSelect.selectedIndex].text;
+
+            // Get the selected color if EQE Saloon is selected
+            var color = "";
+            if (selectedCar === "EQE Saloon") {
+                var colorSelect = document.getElementById("color");
+                color = colorSelect.options[colorSelect.selectedIndex].text;
+            }
+
+            // Display confirmation message
+            var message = "Are you sure you want to proceed with the purchase of ";
+            if (color !== "") {
+                message += color + " ";
+            }
+            message += selectedCar + "?";
+
+            if (confirm(message)) {
+                alert("Purchase successful!");
+                window.location.href = "thankyou.html";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Mercedes-Benz</p><br>
+        <div class="socialmedia-icons">
+            <a href="https://www.facebook.com/MercedesBenz/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mercedesbenz/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@MercedesBenz" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</html>

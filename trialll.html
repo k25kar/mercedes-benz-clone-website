@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz</title>
+    <link rel="stylesheet" href="styleee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo_name">
+                <a href="trialll.html">
+                <img src="mercedes_logo.png" alt="mercedes_logo" style="height: 75px;width: 75px;">
+                </a>
+                <a href="trialll.html" id="merc-benz-mainlogotitle">
+                <h1 class="logo">Mercedes-Benz</h1>
+                </a>
+                <div class="search-bar">
+                    <input id="searchInput" type="text" placeholder="Your Search Term...">
+                    <button id="submitButton" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #a3a3a3;"></i></button>
+                </div>                                
+                <div class="profile-button">
+                    <button id="profile-menu-btn" type="button">
+                        <i class="fa-regular fa-user" style="color: #060606; height: fit-content; width: fit-content;"></i>
+                    </button>
+                    <div id="profile-menu" class="profile-menu">
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="trialll.html">Home</a></li>
+                    <li><a href="#" onclick="scrollToModels()">Models</a></li>
+                    <li><a href="#" onclick="scrollToAbout()">About</a></li>
+                    <li><a href="#" onclick="scrollToContact()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <br><br><br>
+            <h2>NEW 24 PLATES.<br>
+                NOW AVAILABLE.<br>
+            </h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">Book a test drive today and explore our latest technology.</p><br><br><br>
+            <div class="buttons">
+                <a href="login.html"><button class="book-test-drive-btn">Book a Test Drive</button></a>
+                <button class="shop-now-btn" onclick="scrollToModels()">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="explore-mercb">
+        <div class="container">
+            <h2>Explore Mercedes-Benz</h2>
+            <div class="explore-mercb-carousel">
+                <div class="explore">
+                    <img src="discoveroffersacrosstherange.avif" alt="discoveroffersacrosstherange">
+                    <h3>Discover Offers Across the range</h3>
+                    <p class="price">0% APR accross selected Electric Cars.</p><br>
+                    <a onclick="scrollToModels()" class="btn" >View Details</a>
+                </div>
+                <div class="explore">
+                    <img src="approved-used-offer-new-md.avif" alt="approved-used-offer-new-md">
+                    <h3>Our latest Approved Used offers</h3>
+                    <p class="price">Explore our latest offers on selected Approved Used models.</p>
+                    <a href="login.html" class="btn">View Details</a>
+                </div>
+                <div class="explore">
+                    <img src="newonlinecustomerservice.avif" alt="newonlinecustomerservice">
+                    <h3>New Online Customer Service</h3>
+                    <p class="price">Find answers to questions online and the Owner's Manual for your car.</p>
+                    <a href="login.html" class="btn">View Details</a>
+                </div>
+                <div class="explore">
+                    <img src="mercedesinterior.avif" alt="mercedesinterior">
+                    <h3>Explore the Luxury</h3><br>
+                    <p class="price">Interior handcrafted by Master Engineers, exudes Unparalleled Luxury.</p>
+                    <a onclick="scrollToLuxury()" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="terms">
+        <div class="container">
+            <h2>Terms & Conditions</h2>
+            <div class="terms-content">
+                <p><strong>[a]</strong> Based on A 200 AMG Line Executive Hatchback including metallic paint. Advance rental of £7,251. 4 year lease on Contract Hire. Selected stock only. Subject to availability and change. Rentals include Vehicle Excise Duty during hire. T&Cs apply. Orders and credit approvals between 01.03.24 – 31.03.24. Registrations by 31.03.24. Mercedes-Benz Finance, MK15 8BA.</p><br>
+                <p><strong>[b]</strong> Orders and credit approvals between 01.03.24 – 31.03.24. Registrations by 31.03.24. Excludes Mercedes-AMG models. Selected stock only. Subject to availability and change. T&Cs apply. Mercedes-Benz Finance, MK15 8BA.</p><br>
+                <p><strong>[c]</strong> Orders and credit approvals between 01.03.24 – 31.03.24. Registrations by 31.03.24. Excludes Plug-in hybrid and Mercedes-AMG models. Selected stock only. Subject to availability and change. T&Cs apply. Mercedes-Benz Finance, MK15 8BA.</p><br>
+                <p><strong>[d]</strong> Including VAT. For cash and finance customers.</p><br>
+                <p>If you’re unsure about any of the financial terms we’ve used, or just need a refresher, our Finance & Leasing Glossary can help.</p><br>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hero1">
+        <div class="container">
+            <br><br><br>
+            <h2>Mercedes-AMG</h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">Handcrafted precision, dynamic <br>performance, luxury, style and <br>passion – welcome to the world <br>of Mercedes-AMG.</p>
+        </div>
+    </section>
+
+    <section class="hero2">
+        <div class="container">
+            <br><br><br>
+            <h2>Performance for the race track and the road.</h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">At Mercedes-AMG, the art of engineering meets driving performance. In 1967, Hans Werner Aufrecht and Erhard Melcher founded the AMG brand and created a unique link between motorsport technology and vehicles for the road. Under the umbrella of Mercedes-Benz, Mercedes-AMG GmbH now has around 2,000 employees at its main site in Affalterbach.</p><br><br>
+            <img id="mercamgbgpic2" src="mercamgbgpic2.avif" alt="mercamgbgpic2">
+        </div>
+    </section>
+
+    <section class="hero3">
+        <div class="container">
+            <br><br><br><br>
+            <h2>Mercedes-MAYBACH</h2><br><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">Incorporating state-of-the-art technology <br>and an exclusive lifestyle. </p>
+        </div>
+    </section>
+
+    <section class="hero4">
+        <div class="container">
+            <br><br><br>
+            <h2>A trademark that keeps reinventing itself. </h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">The combination of state-of-the-art technology and exceptional luxury has always been part of the Maybach trademark. Just like the special aesthetics, which show a clear identity and differentiation through their design. Progressive and sustainable further development will also be at the forefront in the future: the continuous reinterpretation of the exterior and interior, the integration of alternative drives and the significantly expanded use of digital technologies are concrete measures that help to reinvent the trademark over and over again.</p><br><br>
+            <div class="mercmaybachpics">
+            <img id="mercmaybachbgpic2" src="mercmaybachbgpic2.avif" alt="mercmaybachbgpic2">
+            <img id="mercmaybachbgpic3" src="mercmaybachbgpic3.avif" alt="mercmaybachbgpic3">
+            </div>
+        </div>
+    </section>
+
+    <section class="hero5">
+        <div class="container">
+            <br><br><br>
+            <h2>Mercedes-EQ</h2><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">The all-electric vehicle models from Mercedes-Benz.</p>
+        </div>
+    </section>
+
+    <section class="hero6">
+        <div class="container">
+            <br><br><br>
+            <h2>Your electric driving experience awaits! </h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">Innovative technology seamlessly blends with exceptional driving comfort. Discover the variety of all-electric models from Mercedes-Benz - from compact class to sedans.</p><br><br>
+            <div class="merceqpics">
+            <img id="merceqbgpic2" src="merceqbgpic2.avif" alt="merceqbgpic2">
+            <img id="merceqbgpic3" src="merceqbgpic3.avif" alt="merceqbgpic3">
+            </div>
+        </div>
+    </section>
+
+    <section class="hero7">
+        <div class="container">
+            <br><br><br>
+            <h2>An icon reenvisioned –<br> the new Vision One-Eleven.</h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">The iconic Gullwing is back, now opening the <br>doors to the future of ICONIC LUXURY.</p>
+        </div>
+    </section>
+
+    <section class="hero8">
+        <div class="container">
+            <br><br><br>
+            <h2>Opening the doors to a new era of luxury </h2><br><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">Ready to take off into a new
+                era of sporty luxury: Inspired
+                by the iconic C 111, the
+                extraordinary Mercedes-Benz
+                Vision One-Eleven showcases a
+                highly dynamic design
+                language and innovative all-
+                electric drive technology.</p><br><br><br>
+            <div class="mercvisionpics">
+            <img id="mercvisionbgpic2" src="mercvisionbgpic2.avif" alt="mercvisionbgpic2">
+            <img id="mercvisionbgpic3" src="mercvisionbgpic3.avif" alt="mercvisionbgpic3">
+            </div>
+        </div>
+    </section>
+
+    <section class="hero9">
+        <div class="container">
+            <br><br><br>
+            <h2>We don't just Build Class. <br>We Define it.</h2><br>
+        </div>
+    </section>
+
+    <section class="hero10">
+        <div class="container">
+            <br><br><br>
+            <h2>True
+                class
+                never
+                goes
+                out
+                of
+                style.
+                </h2><br>
+            <p style="font-family: 'Cormorant Infant';font-weight: bold;">For Mercedes-Benz, class goes beyond what we build on the assembly line. It is defined by our brand legacy and goes beyond technology, design, and comfort. Class is in everything we do.</p><br><br>
+            <div class="mercclassicpics">
+            <img id="mercclassicbg2" src="mercclassicbg2.avif" alt="mercclassicbg2">
+            <img id="mercclassicbg3" src="mercclassicbg3.avif" alt="mercclassicbg3">
+            </div>
+        </div>
+    </section>
+
+    <section class="mercb-models">
+        <div class="container">
+            <h2>Explore Models</h2>
+            <div class="mercb-models-carousel">
+                <div class="models">
+                    <img src="merc-eqe-saloon.webp" alt="merc-eqe-saloon">
+                    <h3>EQE Saloon</h3>
+                    <p class="pricemodel">OTR price starting from ₹65,00,000.</p>
+                    <a href="eqe.html" class="btnmodel">View Details</a>
+                </div>
+                <div class="models">
+                    <img src="merc-maybachsclass.webp" alt="merc-maybachsclass">
+                    <h3>Mercedes Maybach S Class</h3>
+                    <p class="pricemodel">OTR price starting from ₹1,58,00,000.</p>
+                    <a href="sclass.html" class="btnmodel">View Details</a>
+                </div>
+                <div class="models">
+                    <img src="merc-amgslroadster.webp" alt="merc-amgslroadster">
+                    <h3>Mercedes-AMG SL Roadster</h3>
+                    <p class="pricemodel">OTR price starting from ₹1,00,00,000.</p>
+                    <a href="slroadster.html" class="btnmodel">View Details</a>
+                </div>
+                <div class="models">
+                    <img src="merc-gclass.webp" alt="merc-gclass">
+                    <h3>G-Class</h3>
+                    <p class="pricemodel">OTR price starting from ₹1,18,00,000.</p>
+                    <a href="gwagon.html" class="btnmodel">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero11">
+        <div class="container">
+            <br><br><br>
+            <h2>Everything that moves you</h2><br><br><br>
+            <p>Discover the world of Mercedes-Benz.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Mercedes stars: icons, legends and passion.</h2>
+            <div class="about-content">
+                <p><strong>1954 | Mercedes-Benz 300 SL "Gullwing"</strong><br>Born in motorsport: in 1952, Mercedes-Benz achieved great international success with the 300 SL race car (W 194). "SL" – the letters stand for "super light". Since 1954, the legendary SL has lived through series production vehicles, starting with the 300 SL "Gullwing". Every generation continues the unique tradition.</p><br>
+                <p><strong>1963 | Mercedes-Benz 600 "Large Mercedes"</strong><br>The presentation of the 600 at the Frankfurt International Motor Show Germany in September 1963 was a real sensation. Conceived as an exclusive representative vehicle for the highest demands, the new top-of-the-line model was equipped as standard with technical features that were unique and represented the state of the art at the time.</p><br>
+                <p><strong>1968 | Mercedes-Benz “Stroke Eight”</strong><br>The four-cylinder models 200 D to 220 were combined in the W 115 model series, while the two six-cylinder models 230 and 250 were assigned the W 114 model series designation. The "new generation” models after their release in 1968 are still commonly referred to as "Stroke 8 models".</p><br>
+                <p><strong>1972 | Mercedes-Benz S-Class 116 model series</strong><br>A completely newly developed generation of luxury class vehicles was presented to the public in September 1972. The first officially named "Mercedes-Benz S-Class" - internal designation W 116 - replaced the 108/109 series and initially comprised the 280 S, 280 SE and 350 SE models.</p><br>
+                <p><strong>1977 | Mercedes-Benz 123 model series estate</strong><br>With great diversity, in January 1976 the new mid-range generation (W 123) impressed customers who waited up to a year at first for their car due to the high demand. The saloon was followed in 1977 by the coupé, a saloon with a long wheelbase and with the first ever factory-built estate.</p><br>
+                <p><strong>1979 | Mercedes-Benz G-Class</strong><br>In February 1979, with the presentation of the Mercedes-Benz G models, a completely new terrain was unlocked. On the other hand, the new generation of off-road vehicles was designed on the one hand as an exclusive means of transportation with a leisure focus, but on the other hand also for the tough everyday use in the industrial or municipal field.</p><br>
+                <p><strong>1982 | Mercedes-Benz 190 E</strong><br>An event eagerly awaited by the public and the trade press was the presentation of the compact 190 and 190 E saloon models on 8 December 1982. The two models did not replace any previous models, but added a third main line to the traditional Mercedes-Benz passenger car range. The new model range was characterised by more compact dimensions, reduced weight and increased economy, without compromising on driving characteristics, safety and reliability.</p><br>              
+            </div>
+            <h2>Automobile History: Innovations & Highlights.</h2>
+            <p>The fascinating success story begins in 1886 with the inventions of Carl Benz and Gottlieb Daimler. The development of motors for land, water, and air was in full swing. The world's first automobile was followed by other inventions that decisively shaped the history of automotive development.</p><br>
+            <p><strong>1954 | Mercedes-Benz 300 SL "Gullwing"</strong><br>Born in motorsport: in 1952, Mercedes-Benz achieved great international success with the 300 SL race car (W 194). "SL" – the letters stand for "super light". Since 1954, the legendary SL has lived through series production vehicles, starting with the 300 SL "Gullwing". Every generation continues the unique tradition.</p><br>
+            <div class="about-content">
+                <p><strong>1886 | Benz patent motorcar</strong><br>The Benz patent motorcar is the world's first automobile. Carl Benz designed it in 1885 and filed for a patent on 29 January 1886 under the name "vehicle with gas engine operation". The patent number 37435, granted by the Imperial Patent Office in Berlin, is the birth certificate of the automobile.</p><br>
+                <p><strong>1900 | Mercedes 35 hp</strong><br>In 1900, on the initiative of Emil Jellinek, Daimler-Motoren-Gesellschaft developed a vehicle that deviated significantly from the carriage construction principle usually used up to then. Emil Jellinek initiated the development of a completely new automobile with a light, powerful engine, long wheelbase and low centre of gravity. According to Jellinek's then ten-year-old daughter, the new model to be developed first bore the name "Mercedes".</p><br>
+                <p><strong>1959 | Safety bodyshell with crumple zones: Mercedes-Benz "Fintail" (W 111)</strong><br>In 1959, Mercedes-Benz introduced an industry-leading innovation – the safety bodyshell. The concept of designer Béla Barényi: crumple zones at the front and rear and a strong passenger compartment in between. The first vehicle was the high-class saloon of the 111 model series, affectionately called the "fintail”.</p><br>
+                <p><strong>1978 | ABS anti-lock braking system in series production passenger cars: Mercedes-Benz S-Class (116 model series)</strong><br>An engineer's dream came true in 1978: Mercedes-Benz presented the anti-lock braking system in the S-Class of the 116 model series. Even when the brake is fully on, the vehicle remains manoeuvrable and hazardous areas can be bypassed. Further assistance systems could be built based on the ABS sensors.</p><br>
+                <p><strong>1981 | Airbag in series production passenger cars: Mercedes-Benz S-Class (126 model series)</strong><br>The world's first production vehicle with a driver's airbag and seat belt tensioner on the front passenger side was the Mercedes-Benz 126 model series S-Class in 1981. In the even of a crash, an airbag unfolds from the steering wheel within milliseconds and forms a padding between the driver and the wheel. It was to complement the seat belt. Today, there are numerous airbags in the entire vehicle.</p><br>
+                <p><strong>2002 | PRE-SAFE passenger protection system: Mercedes-Benz S-Class (220 model series)</strong><br>PRE-SAFE® is another milestone in Mercedes-Benz safety technology development. If the sensors detect an impending collision, the technology prepares the vehicle for impact. For example, it closes the sliding sunroof and side windows, sets the seat backrests to vertical and tightens the seat belts on the front seats as a precautionary measure. This increases the protective effect for the passengers.</p><br>
+                <p><strong>2013 | Mercedes-Benz Intelligent Drive</strong><br>Since 2013, numerous assistance systems have been bundled together under the name Mercedes-Benz Intelligent Drive. The clever combination of cameras, sensors and control units makes the vehicle an “intelligent” partner. The assistance systems and their ever increasing interconnectivity are pioneering – and a milestone on the road to autonomous and accident-free driving.</p><br>
+                <p><strong>2021 | First all-electric luxury saloon from Mercedes-Benz: EQS</strong><br>The EQS is the first fully electric luxury saloon from Mercedes-Benz and is the first model to be built with the modular architecture for luxury and upper-class electric vehicles. The MBUX Hyperscreen, a high-resolution user interface that extends over the entire width of the dashboard, is also celebrated as a world first in series production vehicles.</p><br>
+            </div>   
+            <div class="about-pics">
+                <img src="mercabout1.webp" alt="mercabout1">
+                <img src="mercabout2.avif" alt="mercabout2">
+                <img src="mercabout3.avif" alt="mercabout3">
+                <img src="mercabout4.avif" alt="mercabout4">
+                <img src="mercabout5.avif" alt="mercabout5">
+                <img src="mercabout6.avif" alt="mercabout6">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p><strong><br>Roadside Assistance.</strong> For immediate assistance,
+                    call: +44 (0)207 975 7077
+                    or 00800 1777 7777.
+                    
+                    Please call +44 (0) 207 344 1651
+                    if your mobile phone provider charges for freephone numbers.
+                    
+                    Breakdown support for hearing loss customers is provided via email here: <br><a href="#">hls.gbr@cac.mercedes-benz.com.</a></p><br>
+                <p><strong>Motor Insurance Claim.</strong><br>Lines are open 24/7, 365 days a year.
+                    Tel: 0344 4933 231 (Incl. windscreen)
+                    Tel: +44 1912 889 845 (Abroad)</p><br>
+                <p><strong>Claims for GAP, Minor Damage and Tyre & Alloy Insurance.</strong><br>AutoProtect (MBI) Limited.
+                Monday to Friday 9:00am – 5:00pm
+                Saturday 9:00am – 12:00pm
+                
+                Tel: 0127 9456 507</p><br>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mercedes-Benz</p><br>
+            <div class="socialmedia-icons">
+                <a href="https://www.facebook.com/MercedesBenz/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mercedesbenz/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@MercedesBenz" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
