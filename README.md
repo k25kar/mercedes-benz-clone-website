@@ -6,6 +6,7 @@ Overview
 
 This project is a clone of the official Mercedes-Benz website, built to replicate its layout, design, and functionality. The website features a sleek and modern design, showcasing various car models, their details, and key features. It is fully responsive and built with HTML, CSS, and JavaScript to provide an immersive user experience.
 
+**Run the website from - trialll.html**
 
 Features
 
