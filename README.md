@@ -11,7 +11,7 @@ This project is a clone of the official Mercedes-Benz website, built to replicat
 Click here to view website: 
 https://rawcdn.githack.com/k25kar/mercedes-benz-clone-website/3daec5b0f09aeec5401f4d89f693d2000401f3f6/trialll.html
 
-Features
+# Features
 
 Homepage: A stunning display of Mercedes-Benz models with a sleek navigation bar.
 
