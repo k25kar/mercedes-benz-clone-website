@@ -22,7 +22,7 @@ Interactive Features: Hover effects and smooth scrolling for a dynamic experienc
 User-friendly Navigation: Easy access to different sections such as "About," "Models," and "Contact."
 
 
-Technologies Used
+# Technologies Used
 
 HTML: Structure and content of the website.
 
