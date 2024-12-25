@@ -33,7 +33,7 @@ JavaScript: Interactive elements and functionality (e.g., dynamic model selectio
 Google Fonts: Fonts for a sleek and modern look.
 
 
-Usage
+# Usage
 
 Navigate through the homepage to explore the Mercedes-Benz models.
 
