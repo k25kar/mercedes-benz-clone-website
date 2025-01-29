@@ -1,4 +1,3 @@
-
 # Mercedes-Benz-Clone-Website
 This Git Repository contains project files for 'Mercedes-Benz' clone website.
 
